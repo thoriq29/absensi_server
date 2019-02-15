@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+    Students
+{% endblock title %}
+{% block content %}
+    <form>
+        <div class="search_container">
+            <input type='text' name='q' {% if q %}value = '{{ q }}'{% endif %} placeholder="Search by ID, email or phone"><span aria-hidden="true" id="search" class="icon-magnifier"></span>
+        </div>
+    </form>
+{% endblock content %}
