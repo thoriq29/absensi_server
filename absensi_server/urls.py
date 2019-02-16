@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('absensi_server.backoffices.urls'))
+    path('', include('absensi_server.backoffice.urls',  namespace='backoffice'))
 ]
