@@ -28,6 +28,6 @@ apns2==0.3.0
 # Mock
 mock==1.0.1
 
-requests==2.9.2
+requests==2.20.0
 responses==0.5.1
 unicodecsv==0.14.1
