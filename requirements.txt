@@ -1,0 +1,33 @@
+# requirement project
+django==2.1.7
+django-extensions==2.1.5
+django-model-utils==3.1.2
+psycopg2==2.7.7
+
+# sms engine
+-e git://github.com/ui/django-sms-engine.git@29119b64617a7ca68098a6ef7c370c3695b311ac#egg=django-sms-engine
+
+# API
+djangorestframework==3.6.4
+
+# Test
+freezegun==0.3.5
+
+# Phonenumber
+id_phonenumbers==0.3.2
+phonenumberslite==7.7.3
+
+# post office
+django-post-office==3.0.4
+
+
+# Notifications
+pyfcm==1.4.5
+apns2==0.3.0
+
+# Mock
+mock==1.0.1
+
+requests==2.9.2
+responses==0.5.1
+unicodecsv==0.14.1

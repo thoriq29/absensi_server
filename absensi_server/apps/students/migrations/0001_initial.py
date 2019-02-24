@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('NIS', models.CharField(max_length=50)),
                 ('academic_field', models.PositiveSmallIntegerField(choices=[(1, 'Rekayasa Perangkat Lunak'), (2, 'Teknik Komputer Jaringan'), (3, 'Akuntansi'), (4, 'Administrasi Perkantoran'), (5, 'Tata Niaga')])),
                 ('grade', models.PositiveSmallIntegerField(choices=[(1, 'X'), (2, 'XI'), (3, 'XII')])),
-                ('gender', models.PositiveSmallIntegerField(choices=[(1, 'Male'), (2, 'eFemale')])),
+                ('gender', models.PositiveSmallIntegerField(choices=[(1, 'Male'), (2, 'Female')])),
                 ('email', models.EmailField(max_length=254, unique=True, verbose_name='email address')),
             ],
         ),

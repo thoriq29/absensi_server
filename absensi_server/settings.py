@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'absensi_server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'database.sqlite3'),
     }
 }
 
@@ -126,3 +126,9 @@ STATICFILES_DIRS = [
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# import setting local
+try:
+    from .settings_local import *  # noqa
+except ImportError:
+    pass

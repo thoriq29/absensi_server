@@ -8,4 +8,22 @@
             <input type='text' name='q' {% if q %}value = '{{ q }}'{% endif %} placeholder="Search by ID, email or phone"><span aria-hidden="true" id="search" class="icon-magnifier"></span>
         </div>
     </form>
+    <div class="">
+        <table class="table-bordered">
+            <thead>
+                <th>NIS</th>
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Jurusan</th>
+                {% for student in students %}
+                <tr>
+                    <td>{{student.NIS}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.get_grade_display}}</td>
+                    <td>{{student.get_academic_field_display}}</td>
+                </tr>
+                {% endfor %}
+            </thead>
+        </table>
+    </div>
 {% endblock content %}

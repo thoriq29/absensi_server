@@ -22,7 +22,10 @@ class Students(models.Model):
     grade = models.PositiveSmallIntegerField(choices=GRADE)
     GENDER = Choices(
         (1, 'male', 'Male'),
-        (2, 'female', 'eFemale')
+        (2, 'female', 'Female')
     )
     gender = models.PositiveSmallIntegerField(choices=GENDER)
     email = models.EmailField('email address', unique=True, max_length=254)
+
+    def __str__(self):
+        return self.name
